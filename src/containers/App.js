@@ -33,11 +33,15 @@ class App extends Component {
         } else {
             return (
                 <div className='tc'>
-                    <h1 className='f1'>RoboFriends</h1>
-                    <SearchBox searchChange={this.onSearchChange}/>
-                    <Scroll>
-                        <CardList robots ={filteredRobots}/>
-                    </Scroll>
+                    <div>
+                        <h1 className='f1'>RoboFriends</h1>
+                        <SearchBox searchChange={this.onSearchChange}/>
+                    </div>
+                    <div>
+                        <Scroll>
+                            <CardList robots ={filteredRobots}/>
+                        </Scroll>
+                    </div>
                 </div>
             );
         }
